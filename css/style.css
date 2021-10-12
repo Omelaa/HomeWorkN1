@@ -31,16 +31,13 @@ ul {
 }
 
 body {
-    background-color: #ffffff;
-    background-image: url(../images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
+    background-color: rgb(100, 127, 144);
     color: rgb(67, 113, 121);
     font-size: 20px;
     line-height: 1.2;
     font-family: 'Roboto', sans-serif;
     padding: 35px;
+    height: 100%;
 }
 
 .title {
