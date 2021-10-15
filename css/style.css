@@ -79,9 +79,8 @@ body {
     width: 500px;
     height: 500px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     border: 5px solid #006699;
-    margin-bottom: 40px;
 }
 
 .about__subtitle,
@@ -93,8 +92,7 @@ body {
 .about__info,
 .about__items {
     max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
     border: 5px double #006699;
     padding: 15px;
     border-radius: 10px;
