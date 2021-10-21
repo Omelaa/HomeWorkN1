@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #042131;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.box {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+    background-color: #042131;
+    border-radius: 25px;
+    padding: 25px;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.box:hover {
+    opacity: 0.7;
+}
+
+.title {
+    background-color: #042131;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 2px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.gallery {
+    background-color: #9cbbd2;
+    padding: 0 0 25px 0;
+}
+
+.gallery__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid #00BFFF;
+    border-radius: 50px;
+    padding: 50px 25px 75px 25px;
+}
+
+.gallery__title {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 300px;
+}
+
+.gallery__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 25px;
+    width: 100%;
+}
+
+.gallery__item {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__box {
+    margin-bottom: 20px;
+    max-width: 275px;
+}
+
+.gallery__subtitle {
+    text-align: center;
+}
+
+.about {
+    background-color: #042131;
+    padding: 50px 0;
+}
+
+.about__items {
+    display: flex;
+    grid-gap: 25px;
+    justify-content: center;
+}
+
+.about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 50px;
+    border: 4px solid transparent;
+    transition: border 0.5s;
+}
+
+.about__item:hover {
+    border: 4px solid #00BFFF;
+}
+
+.about__circle {
+    background-color: #9cbbd2;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.about__title{
+    margin-bottom: 25px;
+}
+
+.about__title,
+.about__subtitle{
+    color: #042131;
+    background-color: #9cbbd2;
+    text-align: center;
+}
+
+.about__subtitle{
+    font-size: 25px;
+    line-height: 1.2;
+    max-width: 350px;
+    width: 100%;
+    font-weight: 700;
+}
+
+
+
