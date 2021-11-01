@@ -1,127 +1,62 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ga">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HomeWork3.1</title>
+    <title>HomeWork5.1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tinos&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark font position-absolute end-0 start-0">
-    <div class="container-xl">
-        <a class="navbar-brand" href="#">
-            <img class="logo" src="images/logo.svg" alt="logotype">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse navbar-dark dark" id="navbarTogglerDemo03">
-            <div class="navbar-inner w-100 p-sm-4 d-flex justify-content-sm-center justify-content-lg-end">
-                <ul class="navbar-nav d-flex align-items-center fw-bold grid-gap-2-lg">
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-uppercase" href="#">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-uppercase" href="#">Меню</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-uppercase" href="#">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-uppercase" href="#">Бронь</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center me-4 me-0-sm" href="#">
-                            <img class="nav-img" src="images/cart.png" alt="cart">
-                        </a>
-                    </li>
-                    <li class="navbar-item navbar-after me-5 me-0-sm">
-                    </li>
-                    <li class="nav-item nav-wrap d-flex flex-column gap-1 me-5">
-                        <a class="nav-phone text-white d-flex align-items-center" href="tel:9998887654">
-                            <img class="nav-img pe-1" src="images/phone.png" alt="phone">
-                            +999-888-76-54
-                        </a>
-                        <div class="nav-text text-white fw-normal">
-                            <span>
-                            Свяжитесь с  нами для
-                            бронирования
-                            </span>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn button" type="button">Заказ столика</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
 
-<section class="offer d-flex align-items-center" style="background-image: url(images/bg.jpg);">
-    <div class="container-xl">
-        <div class="offer__wrapper d-flex flex-column align-items-center grid-gap-5">
-            <h1 class="offer__title title d-flex flex-md-column text-center flex-wrap justify-content-center grid-gap-15">
-                <span>Добро пожаловать в</span>
-                Наш ресторан
-            </h1>
-            <div class="offer__subtitle text-uppercase text-white fw-normal position-relative">
-                Дом лучшей еды
-            </div>
-            <a class="offer__btn button" href="#">
-                view menu
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="about">
+<header class="header">
     <div class="container">
-        <ul class="about__items card-group d-flex flex-wrap justify-content-center">
-            <li class="about__item card align-items-center">
-                <img src="images/mask.png" class="about__img card-img-top position-relative" alt="mask" style="width: 87px;height: 87px;">
-                <div class="about__body card-body d-flex flex-column align-items-center">
-                    <h5 class="about__card  card-title title text-center mb-3">Магическая <span>Атмосфера</span></h5>
-                    <p class=" about__text card-text text-center">
-                        В нашем заведении царит магическая атмосфера
-                        наполненная вкусными ароматами
-                    </p>
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarWithDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
                 </div>
-            </li>
-            <li class="about__item card align-items-center">
-                <img src="images/mask.png" class="about__img card-img-top position-relative" alt="mask" style="width: 87px;height: 87px;">
-                <div class="about__body card-body d-flex flex-column align-items-center">
-                    <h5 class="about__card  card-title title text-center mb-3">Лучшее качество <span>Еды</span></h5>
-                    <p class="about__text card-text text-center px-5">
-                        Качество нашей
-                        Еды - отменное!
-                    </p>
-                </div>
-            </li>
-            <li class="about__item card align-items-center">
-                <img src="images/mask.png" class="about__img card-img-top position-relative" alt="mask" style="width: 87px;height: 87px;">
-                <div class="about__body card-body d-flex flex-column align-items-center">
-                    <h5 class="about__card card-title title text-center mb-3">Недорогая <span>Еда</span></h5>
-                    <p class=" about__text card-text text-center">
-                        Стоимость нашей Еды
-                        зависит только от ее
-                        количества. Качество
-                        всегда на высоте!
-                    </p>
-                </div>
-            </li>
-        </ul>
+            </div>
+        </nav>
     </div>
-</section>
+</header>
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
