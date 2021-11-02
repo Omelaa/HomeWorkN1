@@ -162,6 +162,10 @@ li {
     width: 100%;
 }
 
+.energy__img--block{
+    display: none;
+}
+
 .modern__subtitle {
     max-width: 480px;
     width: 100%;
@@ -321,6 +325,22 @@ li {
             top: 22px;
         }
 
+        .energy__img--none{
+            display: none;
+        }
+
+        .energy__img--block{
+            display: block;
+        }
+
+        .energy__img--order{
+            order: -1;
+        }
+
+        .energy__inner{
+            margin: 0 0 50px 0;
+        }
+
         .modern__inner {
             padding: 50px;
         }
@@ -337,7 +357,7 @@ li {
 
     @media (max-width: 414px) {
         .title {
-            font-size: 24px;
+            font-size: 20px;
         }
 
         .modern__inner {
