@@ -12,6 +12,10 @@ a {
     color: inherit;
 }
 
+input {
+    outline: none;
+}
+
 body,
 h1,
 h2,
@@ -95,6 +99,11 @@ body {
     color: #1652AC;
 }
 
+.button {
+    background-color: #005BB9;
+    border-radius: 6px;
+}
+
 .header {
     background-color: #0F2438;
     padding: 10px 0;
@@ -146,6 +155,12 @@ body {
     padding: 20px 0;
 }
 
+.header-offer__inner {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px 10px;
+}
+
 .header-offer__items,
 .header-offer__wrapper {
     display: flex;
@@ -182,6 +197,13 @@ body {
     margin-right: 70px;
 }
 
+.header-offer__item--whats .header-offer__link {
+    background-color: #E1EFD0;
+    padding: 8px 10px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
 .header-offer__phone {
     font-size: 20px;
     font-weight: 500;
@@ -202,6 +224,91 @@ body {
     color: #000000;
 }
 
+.header-offer__wrap {
+    display: flex;
+    align-items: center;
+    grid-gap: 100px;
+}
+
+.header-offer__wrap-left {
+    display: flex;
+    width: 100%;
+}
+
+.header-offer__burger {
+    padding: 17px 32px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.header-offer__img {
+    margin-right: 10px;
+}
+
+.header-offer__input {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    min-width: 235px;
+}
+
+.header-offer__placeholder {
+    padding: 17px;
+    border: 0;
+    background-color: #F4F5FA;
+    width: calc(100% - 100px);
+}
+
+.header-offer__button {
+    padding: 17px 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.header-offer__social {
+    display: flex;
+    grid-gap: 50px;
+}
+
+.header-offer__soc {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    position: relative;
+    padding: 0 0 0 40px;
+    font-weight: 500;
+}
+
+.header-offer__soc:last-child {
+    font-weight: 400;
+    font-size: 12px;
+    width: 140px;
+
+}
+
+.header-offer__soc:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    height: 25px;
+    width: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #E1E5F8;
+}
+
+.header-offer__soc-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+}
 
 @media (max-width: 1200px) {
 
@@ -221,12 +328,6 @@ body {
         grid-gap: 30px;
         flex-wrap: wrap;
         justify-content: flex-end;
-    }
-
-    .header-offer__item--logo {
-        /*max-width: 200px;*/
-        /*width: 100%;*/
-        /*height: 100%;*/
     }
 
     .header-offer__item {
@@ -273,8 +374,20 @@ body {
     .header-offer__item--whats {
         order: 5;
         display: flex;
-        justify-content: flex-end;
+        justify-content: end;
+    }
 
+    .header-offer__item--whats .header-offer__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 5px;
+    }
+
+    .header-offer__item--whats .header-offer__icon {
+        width: 12px;
+        height: 12px;
+        margin: 0 5px 0 0;
     }
 
     .header-offer__item__phone {
@@ -290,6 +403,51 @@ body {
     .logo {
         padding: 0 50px 0 6px;
     }
+
+    .header-offer__wrap {
+        grid-gap: 30px;
+    }
+
+    .header-offer__burger {
+        padding: 15px;
+        margin-right: 15px;
+    }
+
+    .header-offer__burger span {
+        display: none;
+    }
+
+    .header-offer__img {
+        margin: 0;
+    }
+
+    .header-offer__soc {
+        height: 55px;
+        align-items: end;
+        padding: 0;
+    }
+
+    .header-offer__soc-icon {
+        position: absolute;
+        top: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        width: 21px;
+        height: 21px;
+    }
+
+    .header-offer__button,
+    .header-offer__placeholder {
+        padding: 13px 26px;
+    }
+
+    .header-offer__soc:last-child {
+        width: 75px;
+        text-align: center;
+    }
+
+
 }
 
 @media (max-width: 578px) {
@@ -330,6 +488,10 @@ body {
 
     .header-offer__item--whats span {
         font-size: 9px;
+    }
+
+    .header-offer__item--whats .header-offer__link {
+        padding: 3px 3px;
     }
 }
 
