@@ -1,14 +1,20 @@
-function ibg(){
 
-    let ibg=document.querySelectorAll(".ibg");
-    for (var i = 0; i < ibg.length; i++) {
-        if(ibg[i].querySelector('img')){
-            ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
-        }
-    }
-}
+new Swiper('.sliders__container',{
+    slidesPerView:1,
+    loop: true,
+    spaceBetween:20,
 
-ibg();
+
+
+    navigation: {
+        nextEl: '.sliders__button-next',
+        prevEl: '.sliders__button-prev',
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
 
 
 $('#myModal').on('shown.bs.modal', function () {
