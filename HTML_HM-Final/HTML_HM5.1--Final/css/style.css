@@ -789,7 +789,6 @@ body {
 .news__items {
     display: flex;
     justify-content: space-between;
-    /*flex-wrap: wrap;*/
     grid-gap: 20px;
 }
 
@@ -882,17 +881,8 @@ body {
     display: flex;
     flex-direction: column;
     grid-gap: 15px;
-    /*max-width: 400px;*/
     width: 100%;
 }
-
-/*.footer__items:nth-child(1) {*/
-/*    width: 160px;*/
-/*}*/
-
-/*.footer__items:nth-child(2) {*/
-/*    width: 220px;*/
-/*}*/
 
 .footer__item--visa {
     display: flex;
