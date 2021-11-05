@@ -1213,6 +1213,10 @@ body {
         padding: 3px 5px;
     }
 
+    .nav-link{
+        background-color: #0F2438;
+    }
+
     .header-offer__item--whats .header-offer__icon {
         width: 12px;
         height: 12px;
